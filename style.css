@@ -593,3 +593,20 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+.home {
+  background: black; }
+  .home .hfeed {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 2.5%;
+    width: 100%; }
+    .home .hfeed .site-content .site-main .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+
+.site-header .logo-container {
+  text-align: center; }
+  .site-header .logo-container img {
+    margin: 0 auto;
+    width: 700px; }

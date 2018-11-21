@@ -1,0 +1,16 @@
+.home {
+  background: black;
+  .hfeed {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 2.5%;
+    width: 100%;
+    .site-content {
+      .site-main {
+        .container {
+          display: flex;
+        }
+      }
+    }
+  }
+}
