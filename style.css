@@ -221,6 +221,30 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Exo-light-italic';
+  src: url("Exo-LightItalic.woff2") format("woff2"), url("Exo-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo-med';
+  src: url("Exo-Medium.woff2") format("woff2"), url("Exo-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo-light';
+  src: url("Exo-Light.woff2") format("woff2"), url("Exo-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo-meditalic';
+  src: url("Exo-MediumItalic.woff2") format("woff2"), url("Exo-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -598,12 +622,36 @@ object {
   .home .hfeed {
     margin: 0 auto;
     max-width: 1080px;
-    padding: 2.5%;
-    width: 100%; }
+    padding: 2.5%; }
     .home .hfeed .site-content .site-main .container {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 100%; }
+      .home .hfeed .site-content .site-main .container .fa-quote-left {
+        color: #0c0;
+        font-size: 8rem;
+        width: 15%;
+        text-align: left; }
+      .home .hfeed .site-content .site-main .container article {
+        width: 70%;
+        text-align: center;
+        font-family: 'Exo-light';
+        color: white; }
+        .home .hfeed .site-content .site-main .container article .entry-content {
+          font-size: 2.5rem;
+          margin-bottom: 1.5rem; }
+        .home .hfeed .site-content .site-main .container article .entry-meta {
+          font-size: 1rem;
+          line-height: 1.5; }
+      .home .hfeed .site-content .site-main .container .fa-quote-right {
+        color: #0c0;
+        font-size: 8rem;
+        width: 15%;
+        text-align: right; }
 
 .site-header .logo-container {
   text-align: center; }
