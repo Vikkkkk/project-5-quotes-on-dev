@@ -223,25 +223,25 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Exo-light-italic';
-  src: url("Exo-LightItalic.woff2") format("woff2"), url("Exo-LightItalic.woff") format("woff");
+  src: url("../../assets/fonts/Exo-LightItalic.woff2") format("woff2"), url("../../assets/fonts/Exo-LightItalic.woff") format("woff");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: 'Exo-med';
-  src: url("Exo-Medium.woff2") format("woff2"), url("Exo-Medium.woff") format("woff");
+  src: url("../../assets/fonts/Exo-Medium.woff2") format("woff2"), url("../../assets/fonts/Exo-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Exo-light';
-  src: url("Exo-Light.woff2") format("woff2"), url("Exo-Light.woff") format("woff");
+  src: url("../../assets/fonts/Exo-Light.woff2") format("woff2"), url("../../assets/fonts/Exo-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Exo-meditalic';
-  src: url("Exo-MediumItalic.woff2") format("woff2"), url("Exo-MediumItalic.woff") format("woff");
+  src: url("../../assets/fonts/Exo-MediumItalic.woff2") format("woff2"), url("../../assets/fonts/Exo-MediumItalic.woff") format("woff");
   font-weight: 500;
   font-style: italic; }
 
@@ -253,8 +253,8 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: sans-serif;
+  color: #0c0;
+  font-family: "Exo-light";
   font-size: 1rem;
   line-height: 1.5; }
 
@@ -316,7 +316,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: black;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote,
@@ -435,9 +435,9 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #0c0; }
   a:visited {
-    color: purple; }
+    color: green; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -639,22 +639,102 @@ object {
       .home .hfeed .site-content .site-main .container article {
         width: 70%;
         text-align: center;
-        font-family: 'Exo-light';
         color: white; }
         .home .hfeed .site-content .site-main .container article .entry-content {
           font-size: 2.5rem;
           margin-bottom: 1.5rem; }
-        .home .hfeed .site-content .site-main .container article .entry-meta {
-          font-size: 1rem;
-          line-height: 1.5; }
+        .home .hfeed .site-content .site-main .container article .entry-meta h2 {
+          text-align: left;
+          font-size: 1.25rem;
+          font-weight: 400;
+          margin-bottom: 0; }
       .home .hfeed .site-content .site-main .container .fa-quote-right {
         color: #0c0;
         font-size: 8rem;
         width: 15%;
         text-align: right; }
+    .home .hfeed .site-content .site-main button {
+      color: #0c0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: auto;
+      border: 1px solid #0c0;
+      border-radius: 0;
+      background: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1;
+      padding: 0.75rem 2.25rem;
+      text-shadow: none; }
 
 .site-header .logo-container {
   text-align: center; }
   .site-header .logo-container img {
     margin: 0 auto;
     width: 700px; }
+
+.site-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 4.5rem 0 3rem; }
+  .site-footer .main-navigation {
+    width: 27%; }
+    .site-footer .main-navigation .menu li {
+      border-right: 1px solid #fff;
+      line-height: 1;
+      padding: 0 1rem; }
+      .site-footer .main-navigation .menu li a {
+        color: #0c0; }
+  .site-footer .footer-txt {
+    width: 22%; }
+    .site-footer .footer-txt a {
+      text-decoration: none;
+      font-weight: 700; }
+
+.page-id-210 {
+  background: black; }
+  .page-id-210 .hfeed {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 2.5%; }
+    .page-id-210 .hfeed .site-content .site-main .container {
+      margin-top: 3rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 100%; }
+      .page-id-210 .hfeed .site-content .site-main .container .fa-quote-left {
+        color: #0c0;
+        font-size: 8rem;
+        width: 15%;
+        text-align: left; }
+      .page-id-210 .hfeed .site-content .site-main .container article {
+        width: 70%;
+        color: white; }
+        .page-id-210 .hfeed .site-content .site-main .container article .entry-content {
+          font-size: 1rem;
+          line-height: 1.5; }
+        .page-id-210 .hfeed .site-content .site-main .container article .entry-meta h2 {
+          text-align: left;
+          font-size: 1.25rem;
+          font-weight: 400;
+          margin-bottom: 0; }
+      .page-id-210 .hfeed .site-content .site-main .container .fa-quote-right {
+        color: #0c0;
+        font-size: 8rem;
+        width: 15%;
+        text-align: right; }

@@ -25,7 +25,9 @@
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>					
 				</div><!-- .site-branding -->
 				<div class="logo-container">
-					<img src="<?php echo get_template_directory_uri();?>/assets/qod-logo.svg" " alt="qod logo">
+					<a href="<?php echo get_bloginfo( 'url' ); ?>"><img src="<?php echo get_template_directory_uri();?>/assets/qod-logo.svg" alt="qod logo">
+					</a>
+					
 				</div>
 
 				

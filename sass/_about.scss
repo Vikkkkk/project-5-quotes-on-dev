@@ -1,4 +1,4 @@
-.home {
+.page-id-210 {
   background: black;
   .hfeed {
     margin: 0 auto;
@@ -8,6 +8,7 @@
     .site-content {
       .site-main {
         .container {
+          margin-top: 3rem;
           display: flex;
           justify-content: center;
           width: 100%;
@@ -19,11 +20,11 @@
           }
           article {
             width: 70%;
-            text-align: center;
             color: white;
+
             .entry-content {
-              font-size: 2.5rem;
-              margin-bottom: 1.5rem;
+              font-size: 1rem;
+              line-height: 1.5;
             }
             .entry-meta h2 {
               text-align: left;
@@ -38,20 +39,6 @@
             width: 15%;
             text-align: right;
           }
-        }
-        button {
-          color: #0c0;
-          display: flex;
-          margin: auto;
-          border: 1px solid #0c0;
-          border-radius: 0;
-          background: none;
-          box-shadow: none;
-          font-size: 1.25rem;
-          font-weight: 400;
-          line-height: 1;
-          padding: 0.75rem 2.25rem;
-          text-shadow: none;
         }
       }
     }

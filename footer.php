@@ -10,13 +10,11 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
+				<nav id="site-navigation" class="main-navigation" role="navigation">					
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
-				<div class="site-info">
-					
-				</div><!-- .site-info -->
+				</nav><!-- #site-navigation -->				
+				<p class="footer-txt">Brought to you by<a href="https://github.com/vikkkkk"> Victor Guo </a>
+				
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 

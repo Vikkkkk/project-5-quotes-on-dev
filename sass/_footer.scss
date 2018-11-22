@@ -1,4 +1,28 @@
 .site-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+
+  margin: 4.5rem 0 3rem;
   .main-navigation {
+    width: 27%;
+    .menu {
+      li {
+        border-right: 1px solid #fff;
+        line-height: 1;
+        padding: 0 1rem;
+        a {
+          color: #0c0;
+        }
+      }
+    }
+  }
+  .footer-txt {
+    width: 22%;
+    a {
+      text-decoration: none;
+      font-weight: 700;
+    }
   }
 }
