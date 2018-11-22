@@ -9,7 +9,9 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-            <section class="browse-archives">
+        <div class="container">
+    <i class="fas fa-quote-left"></i>
+    <section class="browse-archives">
                 <header class="entry-header">
                     <?php the_title('<h1 class="entry-title">','</h1>');?>
                 </header>
@@ -42,7 +44,11 @@ get_header(); ?>
                     ) ); ?>
                 </div>
             </section>
+    <i class="fas fa-quote-right"></i>
+</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
+
+

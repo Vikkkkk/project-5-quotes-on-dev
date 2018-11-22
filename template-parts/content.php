@@ -12,20 +12,11 @@ $source_url = get_post_meta(get_the_ID(), '_qod_quote_source_url', true);
     <i class="fas fa-quote-left"></i>
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <div class="entry-content">
-            <?php the_content(); ?>
+            <div class="thequote"><?php the_content(); ?></div>
         </div><!-- .entry-content -->
         <div class="entry-meta">
-
-            <!-- <?php the_title('<h2 class="entry-title">&mdash; ', '</h2>'); ?> -->
-            <h2 class="entry-title">- <?php the_title(); ?>
-            <?php if ($source && $source_url): ?>
-                <span class="source">, <a href="<?php echo $source_url; ?>"><?php echo $source; ?></a></span>
-            <?php elseif ($source): ?>
-                <span class="source">, <a href="<?php echo $source; ?>"></a> </span>
-            <?php else: ?>
-                <span class="source"></span>
-            <?php endif ?>
-            </h2>
+            <h2 class="quotetitle">- <?php the_title(); ?></h2>
+            
         </div><!-- .entry-meta -->
     </article><!-- #post-## -->
     <i class="fas fa-quote-right"></i>

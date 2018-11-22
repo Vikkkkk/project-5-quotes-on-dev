@@ -1,4 +1,4 @@
-.page-id-210 {
+.page-id-205 {
   background: black;
   .hfeed {
     margin: 0 auto;
@@ -18,20 +18,23 @@
             width: 15%;
             text-align: left;
           }
-          article {
+          .browse-archives {
             width: 70%;
             color: white;
-            margin-left: 2%;
-
-            .entry-content {
-              font-size: 1rem;
-              line-height: 1.5;
-            }
-            .entry-meta h2 {
-              text-align: left;
-              font-size: 1.25rem;
-              font-weight: 400;
-              margin-bottom: 0;
+            margin-left: 5%;
+            ul {
+              list-style: none;
+              display: flex;
+              flex-wrap: wrap;
+              margin-left: 0;
+              padding-left: 0;
+              li {
+                font-size: 1.25rem;
+                margin-right: 1.125rem;
+                a {
+                  text-decoration: none;
+                }
+              }
             }
           }
           .fa-quote-right {

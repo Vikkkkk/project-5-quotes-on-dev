@@ -1,10 +1,8 @@
-.page-id-210 {
-  background: black;
+.page-id-5 {
   .hfeed {
     margin: 0 auto;
     max-width: 1080px;
     padding: 2.5%;
-    // width: 100%;
     .site-content {
       .site-main {
         .container {
@@ -18,22 +16,30 @@
             width: 15%;
             text-align: left;
           }
-          article {
-            width: 70%;
-            color: white;
-            margin-left: 2%;
-
-            .entry-content {
-              font-size: 1rem;
-              line-height: 1.5;
-            }
-            .entry-meta h2 {
-              text-align: left;
-              font-size: 1.25rem;
-              font-weight: 400;
-              margin-bottom: 0;
+          .quote-submission {
+            width: 60%;
+            form {
+              display: flex;
+              flex-direction: column;
+              div {
+                display: flex;
+                flex-direction: column;
+                margin: 1rem 0;
+                color: white;
+                #quote-author {
+                  width: 30%;
+                }
+                input {
+                  width: 40%;
+                  border-color: #0c0;
+                }
+                textarea {
+                  border-color: #0c0;
+                }
+              }
             }
           }
+
           .fa-quote-right {
             color: #0c0;
             font-size: 8rem;
