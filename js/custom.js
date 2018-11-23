@@ -94,14 +94,13 @@
           //.slideup the form
           //append a success message
           console.log(response);
-
           // $('.form-fields').slideUp(1000);
           $('.quote-submission-wraper').slideUp(1700);
           $('.quote-submission').append(
             '<p class="submission-msg">Your form has been submitted!</p>'
           );
 
-          // alert('form submitted!');
+         
         })
         .fail(function(err) {
           console.log(err);

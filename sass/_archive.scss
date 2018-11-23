@@ -2,47 +2,51 @@
   background: black;
   .hfeed {
     margin: 0 auto;
-    max-width: 1080px;
     padding: 2.5%;
-    // width: 100%;
-    .site-content {
-      .site-main {
-        .container {
-          margin-top: 3rem;
+    @include desktop {
+      max-width: 1080px;
+    }
+    .container {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      .fa-quote-left {
+        display: none;
+        @include desktop {
+          display: block;
+          @include quote-style(left);
+        }
+      }
+      .browse-archives {
+        color: white;
+        @include desktop {
+          width: 70%;
+          margin-left: 5%;
+        }
+        ul {
+          list-style: none;
           display: flex;
-          justify-content: center;
-          width: 100%;
-          .fa-quote-left {
-            color: #0c0;
-            font-size: 8rem;
-            width: 15%;
-            text-align: left;
-          }
-          .browse-archives {
-            width: 70%;
-            color: white;
-            margin-left: 5%;
-            ul {
-              list-style: none;
-              display: flex;
-              flex-wrap: wrap;
-              margin-left: 0;
-              padding-left: 0;
-              li {
-                font-size: 1.25rem;
-                margin-right: 1.125rem;
-                a {
-                  text-decoration: none;
-                }
-              }
+          flex-wrap: wrap;
+          margin-left: 0;
+          padding-left: 0;
+          li {
+            font-size: 1rem;
+            margin-right: 1.125rem;
+            @include desktop {
+              font-size: 1.25rem;
+            }
+            a {
+              text-decoration: none;
             }
           }
-          .fa-quote-right {
-            color: #0c0;
-            font-size: 8rem;
-            width: 15%;
-            text-align: right;
-          }
+        }
+      }
+      .fa-quote-right {
+        display: none;
+        @include desktop {
+          display: block;
+          @include quote-style(right);
         }
       }
     }

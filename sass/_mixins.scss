@@ -16,3 +16,10 @@
     @content;
   }
 }
+
+@mixin quote-style($side) {
+  color: #0c0;
+  font-size: 8rem;
+  width: 15%;
+  text-align: $side;
+}

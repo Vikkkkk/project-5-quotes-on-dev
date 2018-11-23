@@ -1,51 +1,57 @@
 .page-id-5 {
   .hfeed {
     margin: 0 auto;
-    max-width: 1080px;
     padding: 2.5%;
-    .site-content {
-      .site-main {
-        .container {
-          margin-top: 3rem;
+    @include desktop {
+      max-width: 1080px;
+    }
+
+    .container {
+      margin-top: 3rem;
+      display: flex;
+
+      width: 100%;
+      @include desktop {
+        justify-content: center;
+      }
+      .fa-quote-left {
+        display: none;
+        @include desktop {
+          display: block;
+          @include quote-style(left);
+        }
+      }
+      .quote-submission {
+        @include desktop {
+          width: 60%;
+        }
+        form {
           display: flex;
-          justify-content: center;
-          width: 100%;
-          .fa-quote-left {
-            color: #0c0;
-            font-size: 8rem;
-            width: 15%;
-            text-align: left;
-          }
-          .quote-submission {
-            width: 60%;
-            form {
-              display: flex;
-              flex-direction: column;
-              div {
-                display: flex;
-                flex-direction: column;
-                margin: 1rem 0;
-                color: white;
-                #quote-author {
-                  width: 30%;
-                }
-                input {
-                  width: 40%;
-                  border-color: #0c0;
-                }
-                textarea {
-                  border-color: #0c0;
-                }
-              }
+          flex-direction: column;
+          div {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0;
+            color: white;
+            #quote-author {
+              width: 30%;
+            }
+            input {
+              width: 40%;
+              border-color: #0c0;
+            }
+            textarea {
+              border-color: #0c0;
             }
           }
+        }
+      }
 
-          .fa-quote-right {
-            color: #0c0;
-            font-size: 8rem;
-            width: 15%;
-            text-align: right;
-          }
+      .fa-quote-right {
+        display: none;
+        @include desktop {
+          display: block;
+          @include quote-style(right);
         }
       }
     }
