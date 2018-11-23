@@ -36,7 +36,7 @@
             </h2>`
           );
 
-          if (quote._qod_quote_source == 0) {
+          if (quote._qod_quote_source === '') {
             console.log('nosource');
           } else {
             $('.quotetitle').append(
@@ -82,7 +82,8 @@
           title: quotetitle,
           content: quotecontent,
           qod_quote_source: quotesource,
-          qod_quote_sourceurl: quotesourceurl
+          qod_quote_sourceurl: quotesourceurl,
+          status: 'publish'
         },
         beforeSend: function(xhr) {
           xhr.setRequestHeader('X-WP-Nonce', qod_vars.nonce);
