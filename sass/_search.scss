@@ -1,0 +1,52 @@
+.search {
+  .hfeed {
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 2.5%;
+    .site-content {
+      .site-main {
+        .container {
+          margin-top: 3rem;
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          .fa-quote-left {
+            color: #0c0;
+            font-size: 8rem;
+            width: 15%;
+            text-align: left;
+          }
+          .search-results {
+            width: 70%;
+            h1 {
+              border-bottom: 1px dashed white;
+            }
+            .search-form {
+              fieldset {
+                border: none;
+                .search-field {
+                  border: 1px solid, #0c0;
+                  &:focus {
+                    border: 1px solid, white;
+                  }
+                }
+                .search-submit {
+                  border: none;
+                  background: transparent;
+                  box-shadow: none;
+                  color: #0c0;
+                }
+              }
+            }
+          }
+          .fa-quote-right {
+            color: #0c0;
+            font-size: 8rem;
+            width: 15%;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}

@@ -71,7 +71,7 @@
     function postQuote() {
       //get vaue of your form input
       const quotecontent = $('#quote-content').val();
-      const quotetitle = $('#quote-submission-form').val();
+      const quotetitle = $('#quote-author').val();
       const quotesource = $('#quote-source').val();
       const quotesourceurl = $('#quote-source-url').val();
 
@@ -93,6 +93,7 @@
           //.slideup the form
           //append a success message
           console.log(response);
+
           // $('.form-fields').slideUp(1000);
           $('.quote-submission-wraper').slideUp(1700);
           $('.quote-submission').append(

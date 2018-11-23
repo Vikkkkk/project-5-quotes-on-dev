@@ -836,3 +836,79 @@ object {
       font-size: 8rem;
       width: 15%;
       text-align: right; }
+
+.error404 .hfeed {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 2.5%; }
+  .error404 .hfeed .site-content .site-main .container {
+    margin-top: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%; }
+    .error404 .hfeed .site-content .site-main .container .fa-quote-left {
+      color: #0c0;
+      font-size: 8rem;
+      width: 15%;
+      text-align: left; }
+    .error404 .hfeed .site-content .site-main .container .search-form fieldset {
+      border: none; }
+      .error404 .hfeed .site-content .site-main .container .search-form fieldset .search-field {
+        border: 1px solid, #0c0; }
+        .error404 .hfeed .site-content .site-main .container .search-form fieldset .search-field:focus {
+          border: 1px solid, white; }
+      .error404 .hfeed .site-content .site-main .container .search-form fieldset .search-submit {
+        border: none;
+        background: transparent;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        color: #0c0; }
+    .error404 .hfeed .site-content .site-main .container .fa-quote-right {
+      color: #0c0;
+      font-size: 8rem;
+      width: 15%;
+      text-align: right; }
+
+.search .hfeed {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 2.5%; }
+  .search .hfeed .site-content .site-main .container {
+    margin-top: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%; }
+    .search .hfeed .site-content .site-main .container .fa-quote-left {
+      color: #0c0;
+      font-size: 8rem;
+      width: 15%;
+      text-align: left; }
+    .search .hfeed .site-content .site-main .container .search-results {
+      width: 70%; }
+      .search .hfeed .site-content .site-main .container .search-results h1 {
+        border-bottom: 1px dashed white; }
+      .search .hfeed .site-content .site-main .container .search-results .search-form fieldset {
+        border: none; }
+        .search .hfeed .site-content .site-main .container .search-results .search-form fieldset .search-field {
+          border: 1px solid, #0c0; }
+          .search .hfeed .site-content .site-main .container .search-results .search-form fieldset .search-field:focus {
+            border: 1px solid, white; }
+        .search .hfeed .site-content .site-main .container .search-results .search-form fieldset .search-submit {
+          border: none;
+          background: transparent;
+          -webkit-box-shadow: none;
+                  box-shadow: none;
+          color: #0c0; }
+    .search .hfeed .site-content .site-main .container .fa-quote-right {
+      color: #0c0;
+      font-size: 8rem;
+      width: 15%;
+      text-align: right; }
