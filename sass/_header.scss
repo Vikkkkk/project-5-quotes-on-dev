@@ -2,9 +2,24 @@
   margin-top: 3rem;
   .logo-container {
     text-align: center;
+    @include tablet {
+      text-align: left;
+    }
+    @include desktop {
+      text-align: center;
+    }
     img {
       margin: 0 auto;
-      width: 700px;
+
+      @include tablet {
+        width: 500px;
+      }
+      @include desktop {
+        width: 700px;
+      }
+    }
+    @include desktop {
+      margin-bottom: 3.5rem;
     }
   }
 }

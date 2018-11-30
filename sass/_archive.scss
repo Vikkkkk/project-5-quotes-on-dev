@@ -1,5 +1,4 @@
 .page-id-205 {
-  background: black;
   .hfeed {
     margin: 0 auto;
     padding: 2.5%;
@@ -31,13 +30,13 @@
           margin-left: 0;
           padding-left: 0;
           li {
-            font-size: 1rem;
             margin-right: 1.125rem;
             @include desktop {
               font-size: 1.25rem;
             }
             a {
               text-decoration: none;
+              font-size: 1.25rem !important;
             }
           }
         }

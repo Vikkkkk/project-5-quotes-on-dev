@@ -1,5 +1,4 @@
 .home {
-  background: black;
   .hfeed {
     margin: 0 auto;
     padding: 2.5%;
@@ -12,6 +11,7 @@
       @include desktop {
         display: flex;
         justify-content: center;
+        align-items: flex-start;
         width: 100%;
       }
       .fa-quote-left {
@@ -24,15 +24,24 @@
       article {
         color: white;
         @include desktop {
-          width: 70%;
+          width: 60%;
         }
 
         .entry-content {
           font-size: 1.25rem;
           margin-bottom: 1.5rem;
+          margin-top: 0;
           @include desktop {
-            text-align: center;
+            // text-align: center;
             font-size: 2.5rem;
+            .thequote {
+              p:nth-child(1) {
+                display: none;
+              }
+              p:nth-child(2) {
+                margin: 0;
+              }
+            }
           }
         }
         .entry-meta h2 {
@@ -40,6 +49,9 @@
           font-size: 1.25rem;
           font-weight: 400;
           margin-bottom: 0;
+          a &:hover {
+            color: #090;
+          }
         }
       }
       .fa-quote-right {
@@ -62,8 +74,13 @@
       line-height: 1;
       padding: 0.75rem 2.25rem;
       text-shadow: none;
+      &:hover {
+        color: #090;
+        border-color: #090;
+      }
       @include desktop {
         display: flex;
+        margin-top: 2rem;
       }
     }
   }

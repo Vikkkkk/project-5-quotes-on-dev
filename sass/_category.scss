@@ -1,0 +1,85 @@
+.category,
+.tag {
+  .hfeed {
+    margin: 0 auto;
+    padding: 2.5%;
+    @include desktop {
+      max-width: 1080px;
+    }
+
+    .content-area {
+      @include desktop {
+        display: flex;
+      }
+
+      .fa-quote-left {
+        display: none;
+        @include desktop {
+          display: block;
+          @include quote-style(left);
+        }
+      }
+      main {
+        @include desktop {
+          width: 60%;
+        }
+      }
+      .fa-quote-right {
+        display: none;
+        @include desktop {
+          display: block;
+          @include quote-style(right);
+        }
+      }
+
+      .page-header {
+        margin-top: 3rem;
+        padding-bottom: 1rem;
+        @include desktop {
+          display: flex;
+          margin: auto;
+        }
+        h1 {
+          border-bottom: 1px dotted #fff;
+          @include desktop {
+            width: 100%;
+            padding-bottom: 2rem;
+          }
+        }
+      }
+
+      .container {
+        margin-top: 3rem;
+        border-bottom: 1px dotted #fff;
+        padding-bottom: 1rem;
+
+        @include desktop {
+          margin-top: 0;
+          display: flex;
+          justify-content: center;
+          width: 100%;
+        }
+      }
+      article {
+        color: white;
+        margin-left: 2%;
+        font-size: 1.25rem;
+        @include desktop {
+          font-size: 2.5rem;
+        }
+        .entry-content {
+          line-height: 1.5;
+          p {
+            @include desktop {
+              margin-top: 0;
+            }
+          }
+        }
+        h2 {
+          font-size: 1.25rem;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
